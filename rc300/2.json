@@ -1,0 +1,96 @@
+[
+    [
+        {
+            "id": "/heatingCircuits/hc1/roomtemperature",
+            "type": "floatValue",
+            "writeable": 0,
+            "recordable": 1,
+            "value": 3200.0,
+            "unitOfMeasure": "C"
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits/hc1/operationMode",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 1,
+            "value": "auto",
+            "allowedValues": [
+                "night",
+                "day",
+                "auto"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits/hc1/manualRoomSetpoint",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 1,
+            "value": 23.5,
+            "unitOfMeasure": "C",
+            "minValue": 6.0,
+            "maxValue": 30.0
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels/day",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 1,
+            "value": 23.5,
+            "unitOfMeasure": "C",
+            "minValue": 6.0,
+            "maxValue": 30.0
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits/hc1/temperatureLevels/night",
+            "type": "floatValue",
+            "writeable": 1,
+            "recordable": 1,
+            "value": 18.0,
+            "unitOfMeasure": "C",
+            "minValue": 5.0,
+            "maxValue": 29.0
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits/hc1/activeSwitchProgram",
+            "type": "stringValue",
+            "writeable": 1,
+            "recordable": 1,
+            "value": "Eigen1",
+            "allowedValues": [
+                "Eigen1",
+                "Eigen2",
+                "Familie",
+                "Morgen",
+                "Abend",
+                "Vormittag",
+                "Nachmittag",
+                "Mittag",
+                "Single",
+                "Senioren"
+            ]
+        }
+    ],
+    [
+        {
+            "id": "/heatingCircuits/hc1/status",
+            "type": "stringValue",
+            "writeable": 0,
+            "recordable": 0,
+            "value": "ACTIVE",
+            "allowedValues": [
+                "INACTIVE",
+                "ACTIVE"
+            ]
+        }
+    ]
+]
