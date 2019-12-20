@@ -85,7 +85,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "HCprogram",
+            "value": "ownprogram",
             "allowedValues": [
                 "Off",
                 "high",
@@ -98,8 +98,146 @@
             "type": "refEnum",
             "references": [
                 {
+                    "id": "/dhwCircuits/dhw1/switchPrograms/A",
+                    "uri": "http://THERMOSTAT/dhwCircuits/dhw1/switchPrograms/A"
+                },
+                {
                     "id": "/dhwCircuits/dhw1/switchPrograms/cp",
                     "uri": "http://THERMOSTAT/dhwCircuits/dhw1/switchPrograms/cp"
+                }
+            ]
+        },
+        {
+            "id": "/dhwCircuits/dhw1/switchPrograms/A",
+            "type": "switchProgram",
+            "setpointProperty": {
+                "id": "/dhwCircuits/dhw1/temperatureLevels",
+                "uri": "http://THERMOSTAT/dhwCircuits/dhw1/temperatureLevels"
+            },
+            "maxNbOfSwitchPoints": 42,
+            "maxNbOfSwitchPointsPerDay": 6,
+            "switchPointTimeRaster": 15,
+            "writeable": 1,
+            "switchPoints": [
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "high",
+                    "time": 300
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "off",
+                    "time": 720
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "high",
+                    "time": 900
+                },
+                {
+                    "dayOfWeek": "Mo",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "high",
+                    "time": 300
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "off",
+                    "time": 720
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "high",
+                    "time": 930
+                },
+                {
+                    "dayOfWeek": "Tu",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "high",
+                    "time": 300
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "off",
+                    "time": 720
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "high",
+                    "time": 900
+                },
+                {
+                    "dayOfWeek": "We",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "high",
+                    "time": 300
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "off",
+                    "time": 720
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "high",
+                    "time": 900
+                },
+                {
+                    "dayOfWeek": "Th",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "high",
+                    "time": 300
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "off",
+                    "time": 720
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "high",
+                    "time": 900
+                },
+                {
+                    "dayOfWeek": "Fr",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "high",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Sa",
+                    "setpoint": "off",
+                    "time": 1380
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "high",
+                    "time": 420
+                },
+                {
+                    "dayOfWeek": "Su",
+                    "setpoint": "off",
+                    "time": 1380
                 }
             ]
         },
@@ -232,7 +370,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 49.1,
+            "value": 48.6,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -425,7 +563,7 @@
             "type": "stringValue",
             "writeable": 1,
             "recordable": 0,
-            "value": "2019-12-20T12:01:33"
+            "value": "2019-12-20T12:10:45"
         },
         {
             "id": "/gateway/instAccess",
@@ -1288,7 +1426,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 24.2,
+            "value": 24.4,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2060,7 +2198,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 2.8,
+            "value": 0.0,
             "unitOfMeasure": "kW"
         },
         {
@@ -2068,7 +2206,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 2.8,
+            "value": 0.0,
             "unitOfMeasure": "kW"
         },
         {
@@ -2084,7 +2222,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 11.0,
+            "value": 0.0,
             "unitOfMeasure": "%"
         },
         {
@@ -2108,7 +2246,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "on",
+            "value": "off",
             "allowedValues": [
                 "off",
                 "on"
@@ -2119,7 +2257,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 10.0,
+            "value": 0.0,
             "unitOfMeasure": "%"
         },
         {
@@ -2127,7 +2265,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 65.5,
+            "value": 72.6,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2187,7 +2325,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 61.6,
+            "value": 56.8,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2219,7 +2357,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 66.0,
+            "value": 72.6,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2307,7 +2445,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 311949,
+            "value": 311951,
             "unitOfMeasure": "mins"
         },
         {
@@ -2323,7 +2461,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 252569,
+            "value": 252571,
             "unitOfMeasure": "mins"
         },
         {
@@ -2366,7 +2504,7 @@
             "type": "floatValue",
             "writeable": 1,
             "recordable": 0,
-            "value": 4764.2,
+            "value": 4764.7,
             "unitOfMeasure": "kWh",
             "minValue": 0.0,
             "maxValue": 135780000.0
@@ -2477,7 +2615,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 11.0,
+            "value": 0.0,
             "unitOfMeasure": "%"
         },
         {
@@ -2485,7 +2623,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 2.75,
+            "value": 0.0,
             "unitOfMeasure": "kW"
         },
         {
@@ -2493,7 +2631,7 @@
             "type": "stringValue",
             "writeable": 0,
             "recordable": 0,
-            "value": "on",
+            "value": "off",
             "allowedValues": [
                 "off",
                 "on"
@@ -2798,7 +2936,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 1,
-            "value": 11.7,
+            "value": 11.9,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2822,7 +2960,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 67.0,
+            "value": 72.6,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2838,7 +2976,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 49.0,
+            "value": 48.5,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2854,7 +2992,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 62.4,
+            "value": 56.6,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2870,7 +3008,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 44.8,
+            "value": 49.5,
             "unitOfMeasure": "C",
             "state": [
                 {
@@ -2912,7 +3050,7 @@
             "type": "floatValue",
             "writeable": 0,
             "recordable": 0,
-            "value": 67.0,
+            "value": 72.4,
             "unitOfMeasure": "C",
             "state": [
                 {
